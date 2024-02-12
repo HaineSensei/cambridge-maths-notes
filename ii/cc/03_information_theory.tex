@@ -66,7 +66,7 @@ The weak law of large numbers states that if \( X_1, X_2, \dots \) is a sequence
     Let
     \[ A_n = \qty{x \in \mathcal A^n \mid c^\star(x) \text{ has length less than } n \qty(\expect{\ell_1} + \varepsilon)} \]
     Then,
-    \[ \prob{(X_1, \dots, X_n) \in A_n} = \prob{\sum_{i=1}^n \ell_i \leq n \qty(\expect{\ell_1} + \varepsilon)} = \prob{\abs{\frac{1}{n} \sum_{i=1}^n \ell_i - \expect{\ell_i}} < \varepsilon} \to 1 \]
+    \[ \prob{(X_1, \dots, X_n) \in A_n} = \prob{\sum_{i=1}^n \ell_i \leq n \qty(\expect{\ell_1} + \varepsilon)} \ge \prob{\abs{\frac{1}{n} \sum_{i=1}^n \ell_i - \expect{\ell_i}} < \varepsilon} \to 1 \]
     Now, \( c \) is decipherable so \( c^\star \) is injective.
     Hence, \( \abs{A_n} \leq 2^{n\qty(\expect{\ell_1} + \varepsilon)} \).
     Making \( A_n \) larger if necessary, we can assume \( \abs{A_n} = \floor*{2^{n\qty(\expect{\ell_1} + \varepsilon)}} \).
