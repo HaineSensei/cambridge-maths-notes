@@ -139,7 +139,7 @@ One can show that if the source \( X_1, X_2, \dots \) has information rate \( H 
     \[ \frac{1}{n} \log \prob{A_n \cap T_n} \leq -(H - \varepsilon) + \frac{1}{n} \log \abs{A_n} \to -(H - \varepsilon) + (H - 2 \varepsilon) = -\varepsilon \]
     Then, \( \log \prob{A_n \cap T_n} \to -\infty \), so \( \prob{A_n \cap T_n} \to 0 \).
     But \( \prob{T_n} \leq \prob{A_n \cap T_n} + \prob{\mathcal A^n \setminus A_n} \to 0 + 0 \), contradicting typicality.
-    So we cannot reliably encode at rate \( H - \varepsilon \), so the information rate is at least \( H \).
+    So we cannot reliably encode at rate \( H - 2\varepsilon \), so the information rate is at least \( H \).
 \end{proof}
 \begin{corollary}
     A Bernoulli source \( X_1, X_2, \dots \) has information rate \( H(X_1) \).
